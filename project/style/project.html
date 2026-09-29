@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Titana Shane A. Barssubia">
+    <meta name="description" content="This is the student dashboard">
+    <meta name="keywords" content="student dashboard, barsubia, html-dashboard">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Dashboard</h1>
+        </div>
+        <ul>
+            <li><img src="../images/home.png" alt="">Home</li>
+            <li><img src="../images/student.png" alt="">Students</li>
+            <li><img src="../images/class.png" alt=""> Classes</li>
+            <li><img src="../images/group.png" alt=""> Attendance</li>
+            <li><img src="../images/book-open (1).png" alt="">Grades</li>
+            <li><img src="../images/help.png" alt="">Help</li>
+            <li><img src="../images/setting.png" alt=""> Settings</li>
+         </ul>
+    </div>
+
+    <div class="header">
+        <div class="nav">
+                <img src="../images/search (1).png" alt="">
+                <input type="text" placeholder="Search..">
+        </div>
+    </div>
+
+    <main class="simple-content">
+        <section class="student-list">
+            <div class="list-heading">
+                <div>
+                    <h2>Subjects and Progress</h2>
+                    <span id="period-label">First Semester</span>
+                </div>
+                <label class="period-filter" for="period-select">
+                    <span>View period</span>
+                    <select id="period-select">
+                        <option value="first">First Semester</option>
+                        <option value="midterm">Midterm</option>
+                        <option value="final">Final Term</option>
+                    </select>
+                </label>
+            </div>
+            <div class="student-list-header">
+                <strong>Subject</strong>
+                <strong>Progress / Final Grade</strong>
+            </div>
+            <div class="student-row">
+                <div class="subject-info">
+                    <strong>Introduction to Computing</strong>
+                    <span>Instructor: Mabalo, Alvin C.</span>
+                </div>
+                <strong class="grade">80%</strong>
+            </div>
+            <div class="student-row">
+                <div class="subject-info">
+                    <strong>Fundamentals of Programming</strong>
+                    <span>Instructor: Danilyn, Flores A.</span>
+                </div>
+                <strong class="grade">88%</strong>
+            </div>
+            <div class="student-row">
+                <div class="subject-info">
+                    <strong>Discrete Structure 1</strong>
+                    <span>Instructor: Lorilla, Joseph C.</span>
+                </div>
+                <strong class="grade">81%</strong>
+            </div>
+            <div class="student-row">
+                <div class="subject-info">
+                    <strong>Calculus</strong>
+                    <span>Instructor: Pilongo, Jupiter G.</span>
+                </div>
+                <strong class="grade">80%</strong>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+
+    
+</body>
+</html>
